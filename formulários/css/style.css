@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(lightblue,lightcoral);
+    background-repeat: no-repeat;
+    background-size: 1200px 600px;
+}
