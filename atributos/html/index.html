@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Atributos</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <link rel="stylesheet" href="../css/style.css"/>
+    </head>
+    <body>
+        <h1>Atributos de Formulário</h1>
+
+        <!-- atributo de ação (action) -->
+        <h2>Atributo de ação (action)</h2>
+
+        <form action="https://www.youtube.com/channel/UC5aVIcrd8YUcjlFeRMmJMsA">
+            <input type="radio" name="alan" id="alan">
+            <label for="alan">alanzoka</label><br>
+            <input type="submit" value="youtube">
+        </form><br>
+
+        <form action="https://www.twitch.tv/alanzoka">
+            <input type="radio" name="alan" id="alan">
+            <label for="alan">alanzoka</label><br>
+            <input type="submit" value="twitch">
+        </form>
+
+        <!-- autocomplete-->
+        <h2>Autocomplete</h2>
+
+        <form action="https://www.youtube.com/channel/UC5aVIcrd8YUcjlFeRMmJMsA" autocomplete="on">
+            <label for="sobrenome">Nome</label>
+            <input type="text" name="nome" id="name">
+
+            <label for="sobrenome">sobrenome</label>
+            <input type="text" name="sobrenome" id="sobrenome">
+            <input type="submit" value="enviar">
+        </form>
+    </body>
+</html>
