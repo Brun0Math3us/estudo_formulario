@@ -1,0 +1,9 @@
+body{
+    background-image: linear-gradient(lightgreen,rgb(153, 104, 174));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+legend{
+    color: white;
+}

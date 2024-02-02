@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Elementos</title>
+    </head>
+    <body>
+        <h1>Elementos de Formulário</h1>
+
+        <!-- select -->
+        <h2>select</h2>
+        <form action="#">
+            <label for="cores">Selecione uma cor:</label>
+            <select name="cores" id="cores">
+                <option value="vermelho">vermelho</option>
+                <option value="azul">azul</option>
+                <option value="roxo" selected>roxo</option>
+            </select>
+        </form>
+
+        <!-- select + size -->
+        <h2>select + size</h2>
+        <form action="#">
+            <label for="celulares">Selecione um celular:</label> <br><br>
+            <select name="celulares" id="celulares" size="5">
+                <option value="samsung">samsung</option>
+                <option value="apple">apple</option>
+                <option value="motorola">motorola</option>
+                <option value="xiaomi">xiaomi</option>
+                <option value="infinix">infinix</option>
+            </select>
+        </form>
+
+        <!-- select + multiple -->
+        <h2>select + multiple</h2>
+        <form action="#">
+            <label for="youtubers">selecione seus youtubers favoritos:</label>  <br><br>
+            <select name="youtubers" id="youtubers" size="7" multiple>
+                <option value="alan">alan</option>
+                <option value="cap">cap</option>
+                <option value="galaxy">galaxy</option>
+                <option value="renan souzones">renan souzones</option>
+                <option value="moonkase">moonkase</option>
+                <option value="felca">felca</option>
+                <option value="minerva">minerva</option>
+            </select>
+        </form>
+
+        <!-- textarea -->
+        <h2>textarea</h2>
+        <form action="#">
+            <label for="descrição">faça uma auto-descrição</label> <br><br>
+            <textarea name="descrição" id="descrição" cols="30" rows="8">A minha auto-descrição é:</textarea>
+        </form>
+
+        <!-- button -->
+        <h2>button</h2>
+        <form action="#">
+            <label for="surpresa">clique no botão e veja a surpresa</label> <br><br>
+            <button type="button" onclick="alert('surpresa!!')">clique aqui!</button>
+        </form>
+
+        <!-- fieldset -->
+        <h2>fieldset</h2>
+        <form action="#">
+            <fieldset>
+                <label for="nome">nome</label>
+                <input type="text" name="nome" id="nome">
+
+                <label for="sobrenome">sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome"> <br><br>
+
+                <label for="email">email</label>
+                <input type="email" name="email" id="email">
+
+                <label for="telefone">telefone</label>
+                <input type="tel" name="telefone" id="telefone">
+            </fieldset>
+        </form>
+
+        <!-- fieldset + legend -->
+        <h2>fieldset + legend</h2>
+        <fieldset>
+            <legend>SEUS DADOS</legend>
+                <label for="nome">nome</label>
+                <input type="text" name="nome" id="nome">
+
+                <label for="sobrenome">sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome"> <br><br>
+
+                <label for="email">email</label>
+                <input type="email" name="email" id="email">
+
+                <label for="telefone">telefone</label>
+                <input type="tel" name="telefone" id="telefone">
+        </fieldset>
+
+
+
+
+
+        <br><br><br><br><br><br><br>
+    </body>
+</html>
