@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <title>Atributos de Input</title>
+        <link rel="stylesheet" href="../css/style.css"/>
+    </head>
+    <body>
+        <h1>Atributos de Input</h1>
+
+        <!-- value -->
+        <h2>value</h2>
+        <form action="#">
+            <label for="paiN">Melhor time do mundo:</label>
+            <input type="text" id="paiN" name="paiN" value="paiN">
+        </form>
+
+        <!-- readonly -->
+        <h2>readonly</h2>
+        <form action="#">
+            <label for="exemplo">você não pode editar esse texto:</label>
+            <input type="text" id="exemplo" name="exemplo" value="Texto somente leitura!" readonly>
+        </form>
+
+        <!-- disabled -->
+        <h2>disabled</h2>
+        <form action="#">
+            <label for="paiN">melhor time do mundo:</label>
+            <input type="text" name="paiN" id="paiN" value="paiN Gaming" disabled>
+        </form>
+
+        <!-- size -->
+        <h2>size</h2>
+        <form action="#">
+            <label for="size">menor</label>
+            <input type="text" id="size" name="size" size="5"> <br>
+
+            <label for="size">maior</label>
+            <input type="text" id="size" name="sizee" size="13">
+        </form>
+
+        <!-- maxlengh -->
+        <h2>maxlengh</h2>
+        <form action="#">
+            <label for="maxlengh">até 10 caracteres</label>
+            <input type="text" id="maxlengh" name="maxlengh" maxlength="10">
+        </form>
+
+        <!-- min e max -->
+        <h2>min e max</h2>
+        <form action="#">
+            <label for="numero">entre 1 e 10:</label>
+            <input type="number" id="numero" name="numero" min="1" max="10"> <br><br>
+        </form>
+
+        <!-- multiple -->
+        <h2>multiiple</h2>
+        <form action="#">
+            <label for="arquivo">Usar Ctrl  para selecionar mais de um arquivo.</label>
+            <input type="file" id="arquivo" name="arquivo" multiple>
+        </form>
+
+        <!-- pattern -->
+        <h2>pattern</h2>
+        <form action="#">
+            <label for="cpf">Digite o seu cpf: (somente numeros)</label>
+            <input type="number" id="cpf" name="cpf" pattern="[0-9]{11}" title="incorreto">
+            <input type="submit" id="cpf" value="enviar">
+        </form>
+    </body>
+</html>
