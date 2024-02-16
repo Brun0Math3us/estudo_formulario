@@ -103,5 +103,33 @@
             <label for="imagem">imagem:</label> <br>
             <input type="image" src="../img/paiN.png" width="50px" height="50px" id="imagem" alt="submit">
         </form>
+
+        <!-- list -->
+        <h2>list</h2>
+        <form action="#">
+            <label for="times">escolha uma opção:</label>
+            <input list="times" name="times">
+                <datalist id="times">
+                    <option value="paiN">
+                    <option value="RED">
+                    <option value="Loud">
+                    <option value="Furia">
+                    <option value="LOS">
+                </datalist>
+        </form>
+
+        <!-- autocomplete -->
+        <h2>autocomplete</h2>
+        <form action="#">
+            <label for="nome">nome:</label>
+            <input type="text" id="nome" name="nome" autocomplete="on"> <br><br>
+
+            <label for="sobrenome">sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" autocomplete="off">
+
+            <input type="submit" value="enviar">
+        </form>
+
+        <!--  -->
     </body>
 </html>

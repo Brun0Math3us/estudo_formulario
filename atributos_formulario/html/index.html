@@ -1,0 +1,59 @@
+<!DOCTYPE  html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <link rel="stylesheet" href="../css/style.css"/>
+        <title>atributos</title>
+    </head>
+    <body>
+        <h1>atributos de Fornmulário</h1>
+
+        <!-- form -->
+        <h2>form</h2>
+        <form action="#" id="formulario1">
+            <label for="nome">nome:</label>
+            <input type="text" id="nome" name="nome"> <br><br>
+
+            <label for="sobrenome">sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome"> <br><br>
+        </form>
+
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email" form="formulario1">
+
+        <!-- formaction -->
+        <h2>formaction</h2>
+        <form action="https://www.youtube.com/">
+            <input type="submit" value="youtube">
+            <input type="submit" value="paiN" formaction="https://www.soupain.com.br/">
+            <input type="submit" value="Duolingo" formaction="https://www.duolingo.com/learn">
+        </form>
+
+        <!-- method -->
+        <h2>method</h2>
+        <form action="#" method="get">
+            <label for="nome">nome</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="sobrenome">sobrenome</label>
+            <input type="text" id="sobrenome" name="sobrenome">
+
+            <input type="submit" value="enviar em get">
+            <input type="submit" value="enviar em post" formmethod="post">
+        </form>
+
+        <!-- formtarget -->
+        <h2>formtarget</h2>
+        <form action="#">
+            <label for="nome">nome</label>
+            <input type="text" id="nome" name="nome"> <br><br>
+
+            <label for="sobrenome">sobrenome</label>
+            <input type="text" id="sobrenome" name="sobrenome"> <br><br>
+
+            <input type="submit" value="abrir na mesma guia"> <br> <br>
+            <input type="submit" value="abrir em uma nova guia" formtarget="_blank">
+        </form>
+    </body>
+</html>
