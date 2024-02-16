@@ -24,7 +24,7 @@
 
         <!-- formaction -->
         <h2>formaction</h2>
-        <form action="https://www.youtube.com/">
+        <form action="www.youtube.com/">
             <input type="submit" value="youtube">
             <input type="submit" value="paiN" formaction="https://www.soupain.com.br/">
             <input type="submit" value="Duolingo" formaction="https://www.duolingo.com/learn">
@@ -54,6 +54,31 @@
 
             <input type="submit" value="abrir na mesma guia"> <br> <br>
             <input type="submit" value="abrir em uma nova guia" formtarget="_blank">
+        </form>
+
+        <!-- formnovalidate -->
+        <h2>formnovalidate</h2>
+        <form action="#">
+            <label for="nome">nome</label>
+            <input type="text" id="nome" name="nome"> <br><br>
+
+            <label for="sobrenome">sobrenome</label>
+            <input type="text" id="sobrenome" name="sobrenome"> <br><br>
+
+            <input type="submit" value="enviar">
+            <input type="submit" value="enviar sem validação" formnovalidate>
+        </form>
+
+        <!-- novalidate -->
+        <h2>novalidate</h2>
+        <form action="#" novalidate>
+            <label for="nome">nome</label>
+            <input type="text" id="nome" name="nome"> <br><br>
+
+            <label for="sobrenome">sobrenome</label>
+            <input type="text" id="sobrenome" name="sobrenome"> <br><br>
+
+            <input type="submit" value="enviar">
         </form>
     </body>
 </html>
